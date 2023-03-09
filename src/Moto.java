@@ -2,8 +2,8 @@ public final class Moto extends Vehiculo {
     private Integer cilindraje;
     private Boolean esElectrica;
 
-    public Moto(String marca, String modelo, Integer cilindraje, Boolean esElectrica) {
-        super(marca, modelo);
+    public Moto(String marca, String modelo, String placa, Integer cilindraje, Boolean esElectrica) {
+        super(marca, modelo, placa);
         this.cilindraje = cilindraje;
         this.esElectrica = esElectrica;
     }
@@ -29,5 +29,16 @@ public final class Moto extends Vehiculo {
             return(" SI es eléctrica.");
         else
             return(" NO es eléctrica.");
+    }
+
+    @Override
+    public String toString() {
+        return "Moto{" +
+                "cilindraje=" + cilindraje +
+                ", esElectrica=" + esElectrica +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", placa='" + placa + '\'' +
+                '}';
     }
 }

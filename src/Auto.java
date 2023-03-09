@@ -2,8 +2,8 @@ public final class Auto extends Vehiculo {
     private String motor;
     private Integer numeroPuertas;
 
-    public Auto(String marca, String modelo, String motor, Integer numeroPuertas) {
-        super(marca, modelo);
+    public Auto(String marca, String modelo, String placa, String motor, Integer numeroPuertas) {
+        super(marca, modelo, placa);
         this.motor = motor;
         this.numeroPuertas = numeroPuertas;
     }

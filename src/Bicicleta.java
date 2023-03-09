@@ -3,8 +3,8 @@ public final class Bicicleta extends Vehiculo {
     private String tamano;
     private Integer cambios;
 
-    public Bicicleta(String marca, String modelo, String tipoLlanta, String tamano, Integer cambios) {
-        super(marca, modelo);
+    public Bicicleta(String marca, String modelo, String placa, String tipoLlanta, String tamano, Integer cambios) {
+        super(marca, modelo, placa);
         this.tipoLlanta = tipoLlanta;
         this.tamano = tamano;
         this.cambios = cambios;
